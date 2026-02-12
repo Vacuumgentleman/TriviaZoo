@@ -24,7 +24,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9ab3c26cbf4bb145a416d5f528a7b6a, type: 3}
-  m_Name: TriviaZoo GameConfiguration
+  m_Name: TriviaZoo_GC
   m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.GameConfiguration
   Categories:
   - {fileID: 7711279776256293303}

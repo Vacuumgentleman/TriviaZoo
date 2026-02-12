@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cb37bccd4552c47b034ee4f613cac0, type: 3}
   m_Name: Preguntas_v1
   m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.QuestionPack
-  Name: Todas_v1
+  Name: Todas
   Questions:
   - {fileID: -6625576003607308439}
   - {fileID: 1964896839120268525}
