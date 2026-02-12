@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 39d8278ff643f7f46a5fa0169a9e7d6c
+timeCreated: 1527093302
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scripts/Game/UI/Popups/AlertPopup.cs
+  uploadId: 787892

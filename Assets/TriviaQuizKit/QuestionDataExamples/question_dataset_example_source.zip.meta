@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f5368b8e6f6af42f5811e81922f2a5ac
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/QuestionDataExamples/question_dataset_example_source.zip
+  uploadId: 787892

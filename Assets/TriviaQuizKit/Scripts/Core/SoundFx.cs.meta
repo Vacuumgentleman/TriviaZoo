@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 491e80d532d0cbd46ae44f35a3617d9e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scripts/Core/SoundFx.cs
+  uploadId: 787892

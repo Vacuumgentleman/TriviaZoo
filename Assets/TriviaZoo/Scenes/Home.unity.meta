@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a3cdca1c4f370430e866362e064cc18c
+timeCreated: 1525955543
+licenseType: Store
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scenes/Home.unity
+  uploadId: 787892

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aa7a74a7b4bc84bcaadfcdf9999dcd41
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Animations/HomeScene/PlayButton.controller
+  uploadId: 787892

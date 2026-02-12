@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 98e3c2cbc8f8d4fb4b88843032636866
+timeCreated: 1525955543
+licenseType: Store
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scenes/CategorySelection.unity
+  uploadId: 787892

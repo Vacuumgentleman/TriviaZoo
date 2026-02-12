@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 53645e397fbc5c040afd9dc782b368e2
+timeCreated: 1526572562
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scripts/Core/ListShuffle.cs
+  uploadId: 787892

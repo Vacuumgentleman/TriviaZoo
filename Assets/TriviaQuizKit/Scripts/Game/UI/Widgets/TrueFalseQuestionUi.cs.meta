@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: f0916e8c7d44dba44aa312b416a2b553
+timeCreated: 1526654978
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scripts/Game/UI/Widgets/TrueFalseQuestionUi.cs
+  uploadId: 787892

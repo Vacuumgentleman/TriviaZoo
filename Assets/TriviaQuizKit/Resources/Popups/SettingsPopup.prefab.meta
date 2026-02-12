@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2a90d8557e0174df983dfb7e83ece615
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Resources/Popups/SettingsPopup.prefab
+  uploadId: 787892

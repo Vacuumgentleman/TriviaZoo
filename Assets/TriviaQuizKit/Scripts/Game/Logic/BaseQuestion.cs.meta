@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: fa12632288f28524fa32e6f340387e87
+timeCreated: 1525954642
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scripts/Game/Logic/BaseQuestion.cs
+  uploadId: 787892

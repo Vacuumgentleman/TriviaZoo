@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5581858008233161885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
+  Name: Jaguar
+  Sprite: {fileID: 21300000, guid: 0a00812215a7889e98cbdce976928b40, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ab3c26cbf4bb145a416d5f528a7b6a, type: 3}
+  m_Name: TriviaZoo GameConfiguration
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.GameConfiguration
+  Categories:
+  - {fileID: 7711279776256293303}
+  - {fileID: 4933456055490455956}
+  - {fileID: -5581858008233161885}
+  - {fileID: 3103592366461630950}
+  AnyCategorySprite: {fileID: 21300000, guid: 2855c9d3b76b1030e90352a9733b21da, type: 3}
+  NumQuestions: 5
+  NumQuestionsNeededForBronzeTrophy: 3
+  NumQuestionsNeededForSilverTrophy: 4
+  NumQuestionsNeededForGoldTrophy: 5
+  QuestionScore: 10
+  TimeLimit: 10
+  SingleChoiceQuestionUi: {fileID: 1643416459490154, guid: b194cd2c64914d543aae21bf71848389,
+    type: 3}
+  SingleChoiceWithImageQuestionUi: {fileID: 1643416459490154, guid: 9edcc3011d884e5448bd2c42d6021552,
+    type: 3}
+  MultipleChoiceQuestionUi: {fileID: 1643416459490154, guid: 9e7ad624da07093498fa4fbe85aceeca,
+    type: 3}
+  MultipleChoiceWithImageQuestionUi: {fileID: 1643416459490154, guid: e9daf7445636251408923738092f6843,
+    type: 3}
+  TrueFalseQuestionUi: {fileID: 1762113671974004, guid: 61e6fe2f61f5adb48aebdb01fa8047c1,
+    type: 3}
+  TrueFalseWithImageQuestionUi: {fileID: 1762113671974004, guid: 3a7d8b09b12d840468d11af295984370,
+    type: 3}
+  PreloadedQuestionPacks: {fileID: 11400000, guid: cb70f81c1daca1aba9597c4ef5d42c1e,
+    type: 2}
+--- !u!114 &3103592366461630950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
+  Name: Oso
+  Sprite: {fileID: 21300000, guid: 06bf61a822c39e437942df120fa86fc8, type: 3}
+--- !u!114 &4933456055490455956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
+  Name: Aguila
+  Sprite: {fileID: 21300000, guid: e1e3243baf98fa28eb494bea6ac9ef67, type: 3}
+--- !u!114 &7711279776256293303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
+  Name: Tigrillo
+  Sprite: {fileID: 21300000, guid: 582af4aa1e27bb765b3aeb5ec927406b, type: 3}

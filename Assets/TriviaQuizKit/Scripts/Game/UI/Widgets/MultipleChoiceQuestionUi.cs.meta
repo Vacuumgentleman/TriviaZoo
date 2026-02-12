@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 442be6ba9c98f1e458050579c3d8b336
+timeCreated: 1526917698
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scripts/Game/UI/Widgets/MultipleChoiceQuestionUi.cs
+  uploadId: 787892

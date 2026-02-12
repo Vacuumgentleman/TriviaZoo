@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: a0c4821288db6ea4c96bf2b8a93e37c5
+timeCreated: 1527087315
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scripts/Game/UI/Widgets/CategoryScrollItem.cs
+  uploadId: 787892

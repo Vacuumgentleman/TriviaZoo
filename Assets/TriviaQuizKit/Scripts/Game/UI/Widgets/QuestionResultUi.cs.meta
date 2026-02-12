@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: e8c936820b21aae48b6b934cece107b2
+timeCreated: 1527006071
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scripts/Game/UI/Widgets/QuestionResultUi.cs
+  uploadId: 787892

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: c0a899eeaad303e4d9b3edac705b3c38
+timeCreated: 1526568549
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scripts/Game/UI/Widgets/CategoryToggle.cs
+  uploadId: 787892

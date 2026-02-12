@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3a7d8b09b12d840468d11af295984370
+timeCreated: 1526654786
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Resources/QuestionUI/TrueFalseWithImageQuestionUI.prefab
+  uploadId: 787892

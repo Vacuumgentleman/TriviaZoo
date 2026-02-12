@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: c99cf0eea6ea5e741beb0d729a227aa6
+timeCreated: 1525954182
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Scripts/Game/Logic/SingleChoiceQuestion.cs
+  uploadId: 787892

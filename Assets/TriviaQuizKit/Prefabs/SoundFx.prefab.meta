@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: af7bfd1c07c9349468a1d88321b77afb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119432
+  packageName: Trivia Quiz Kit
+  packageVersion: 2.3.0
+  assetPath: Assets/TriviaQuizKit/Prefabs/SoundFx.prefab
+  uploadId: 787892
