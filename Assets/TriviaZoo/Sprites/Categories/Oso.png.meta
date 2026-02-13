@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0a00812215a7889e98cbdce976928b40
+guid: f00e65ec4f8d2d5129644611d558b2a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1631748425742730840
-    second: Jaguar_0
+      213: -2660355293227463094
+    second: Oso_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jaguar_0
+      name: Oso_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 612
-        height: 612
+        x: 44
+        y: 18
+        width: 611
+        height: 666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 856c23f3c8225a610800000000000000
-      internalID: 1631748425742730840
+      spriteID: a4ec8dab4f4841bd0800000000000000
+      internalID: -2660355293227463094
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Jaguar_0: 1631748425742730840
+      Oso_0: -2660355293227463094
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

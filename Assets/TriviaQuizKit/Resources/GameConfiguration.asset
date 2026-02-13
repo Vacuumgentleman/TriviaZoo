@@ -1,5 +1,47 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8231707837316754802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
+  Name: Jaguar
+  Sprite: {fileID: 21300000, guid: 2855c9d3b76b1030e90352a9733b21da, type: 3}
+--- !u!114 &-7750680459389162525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
+  Name: Tigrillo
+  Sprite: {fileID: 21300000, guid: 5dc7a64f99decf3c394073583eda13ba, type: 3}
+--- !u!114 &-2422636769281858516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
+  Name: Aguila
+  Sprite: {fileID: 21300000, guid: e256bafdccb64c6499cc9eaf795b60fc, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,13 +55,10 @@ MonoBehaviour:
   m_Name: GameConfiguration
   m_EditorClassIdentifier: 
   Categories:
-  - {fileID: 114780387891312140}
-  - {fileID: 114769826771408804}
-  - {fileID: 114354912026890582}
-  - {fileID: 114327978994765692}
-  - {fileID: 114848791769761360}
-  - {fileID: 114196524327513978}
-  - {fileID: 114285080633385342}
+  - {fileID: -7750680459389162525}
+  - {fileID: -8231707837316754802}
+  - {fileID: -2422636769281858516}
+  - {fileID: 1207694988285569143}
   AnyCategorySprite: {fileID: 21300000, guid: 66f621c505f252f4ba9c246f4b8c53f7, type: 3}
   NumQuestions: 5
   NumQuestionsNeededForBronzeTrophy: 2
@@ -41,7 +80,7 @@ MonoBehaviour:
     type: 3}
   PreloadedQuestionPacks: {fileID: 11400000, guid: fa309a9b5553851478bd856ec4845b7c,
     type: 2}
---- !u!114 &114196524327513978
+--- !u!114 &1207694988285569143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -52,90 +91,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Movies
-  Sprite: {fileID: 21300000, guid: 1382d1c89b96f4e2e80e25deaaf4325d, type: 3}
---- !u!114 &114285080633385342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Games
-  Sprite: {fileID: 21300000, guid: fa4214bef1ae858469da727c28210041, type: 3}
---- !u!114 &114327978994765692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Science
-  Sprite: {fileID: 21300000, guid: d2ce107fd66f74c2db9e3bcf18047752, type: 3}
---- !u!114 &114354912026890582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Sports
-  Sprite: {fileID: 21300000, guid: 8a238cfc00e6a47f8b82a218a8c113b9, type: 3}
---- !u!114 &114769826771408804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: History
-  Sprite: {fileID: 21300000, guid: 76f9468e5bca145d7b540720aabb4fc5, type: 3}
---- !u!114 &114780387891312140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Geography
-  Sprite: {fileID: 21300000, guid: d5ab1ad400a744829a952b73cb4df307, type: 3}
---- !u!114 &114848791769761360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Art
-  Sprite: {fileID: 21300000, guid: 3d6b7919eddf5402582c1b1b78d3ac32, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
+  Name: Oso
+  Sprite: {fileID: 21300000, guid: f00e65ec4f8d2d5129644611d558b2a7, type: 3}

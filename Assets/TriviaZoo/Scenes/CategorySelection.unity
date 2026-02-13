@@ -2309,7 +2309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4a9ba060429b5c4e92d1fb6cc6c3aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameConfiguration: {fileID: 11400000, guid: 4231173f777fca2b5b940bef844efaef, type: 2}
+  GameConfiguration: {fileID: 11400000, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
   CategoryToggleGroup: {fileID: 1865837378}
   CategoryTogglePrefab: {fileID: 1143736033340568, guid: 0cadb2fc57234614f964e13fafbe9cf9,
     type: 3}
