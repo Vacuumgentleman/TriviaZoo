@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f00e65ec4f8d2d5129644611d558b2a7
+guid: 1598cc1cbb32df93c973395e9800dc04
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2660355293227463094
-    second: Oso_0
+      213: 9099750508295574675
+    second: Tigrillo_v3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Oso_0
+      name: Tigrillo_v3_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 18
-        width: 611
-        height: 666
+        x: 88
+        y: 105
+        width: 523
+        height: 507
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4ec8dab4f4841bd0800000000000000
-      internalID: -2660355293227463094
+      spriteID: 39453afefdec84e70800000000000000
+      internalID: 9099750508295574675
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Oso_0: -2660355293227463094
+      Tigrillo_v3_0: 9099750508295574675
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

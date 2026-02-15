@@ -1,40 +1,34 @@
 fileFormatVersion: 2
-guid: 2855c9d3b76b1030e90352a9733b21da
+guid: 071cf9750a17cfad7a0659e500252ced
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5370171442336262536
-    second: Aleatorio_0
+      213: 101209642910601267
+    second: Logo 1_0
   - first:
-      213: 4073001853714427632
-    second: Aleatorio_1
+      213: -3936444673696339432
+    second: Logo 1_1
   - first:
-      213: -3891893689160181524
-    second: Aleatorio_2
+      213: 9092564933819195439
+    second: Logo 1_2
   - first:
-      213: 6234422712723314698
-    second: Aleatorio_3
+      213: 3095362166596880681
+    second: Logo 1_3
   - first:
-      213: 4112081261361040318
-    second: Aleatorio_4
+      213: -2291964472640486642
+    second: Logo 1_4
   - first:
-      213: 6145317627633921723
-    second: Aleatorio_5
+      213: -7688915094072924390
+    second: Logo 1_5
   - first:
-      213: 8618522113920723272
-    second: Aleatorio_6
+      213: -4033926105570047289
+    second: Logo 1_6
   - first:
-      213: -8731837156529302082
-    second: Aleatorio_7
+      213: 6239849434180837690
+    second: Logo 1_7
   - first:
-      213: -7741840643521793728
-    second: Aleatorio_8
-  - first:
-      213: -6839949381651375370
-    second: Aleatorio_9
-  - first:
-      213: 8817353378362337412
-    second: Aleatorio_10
+      213: -501210456470452182
+    second: Logo 1_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -143,13 +137,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Aleatorio_0
+      name: Logo 1_0
       rect:
         serializedVersion: 2
-        x: 111
-        y: 423
-        width: 66
-        height: 82
+        x: 25
+        y: 43
+        width: 136
+        height: 206
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8896663797ea68a40800000000000000
-      internalID: 5370171442336262536
+      spriteID: 330d78d42a1976100800000000000000
+      internalID: 101209642910601267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aleatorio_1
+      name: Logo 1_1
       rect:
         serializedVersion: 2
-        x: 215
-        y: 319
-        width: 82
-        height: 122
+        x: 165
+        y: 47
+        width: 108
+        height: 185
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0fee7243b95368830800000000000000
-      internalID: 4073001853714427632
+      spriteID: 81ae95aec60fe59c0800000000000000
+      internalID: -3936444673696339432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aleatorio_2
+      name: Logo 1_2
       rect:
         serializedVersion: 2
-        x: 335
-        y: 395
-        width: 65
-        height: 83
+        x: 274
+        y: 194
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce8d5025f473df9c0800000000000000
-      internalID: -3891893689160181524
+      spriteID: f20677102a74f2e70800000000000000
+      internalID: 9092564933819195439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aleatorio_3
+      name: Logo 1_3
       rect:
         serializedVersion: 2
-        x: 157
-        y: 403
-        width: 19
-        height: 19
+        x: 322
+        y: 53
+        width: 131
+        height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0810830d6e158650800000000000000
-      internalID: 6234422712723314698
+      spriteID: 929c0379d7fe4fa20800000000000000
+      internalID: 3095362166596880681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aleatorio_4
+      name: Logo 1_4
       rect:
         serializedVersion: 2
-        x: 339
-        y: 374
-        width: 18
-        height: 19
+        x: 459
+        y: 197
+        width: 39
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebb07f6de1c011930800000000000000
-      internalID: 4112081261361040318
+      spriteID: e03c27a947e4130e0800000000000000
+      internalID: -2291964472640486642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aleatorio_5
+      name: Logo 1_5
       rect:
         serializedVersion: 2
-        x: 401
-        y: 327
-        width: 63
-        height: 64
+        x: 506
+        y: 42
+        width: 138
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbee013b2dd884550800000000000000
-      internalID: 6145317627633921723
+      spriteID: a17e4a5a57c7b4590800000000000000
+      internalID: -7688915094072924390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aleatorio_6
+      name: Logo 1_6
       rect:
         serializedVersion: 2
-        x: 40
-        y: 288
-        width: 64
-        height: 64
+        x: 640
+        y: 16
+        width: 495
+        height: 246
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 849e71123342b9770800000000000000
-      internalID: 8618522113920723272
+      spriteID: 7ca8253649d9408c0800000000000000
+      internalID: -4033926105570047289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aleatorio_7
+      name: Logo 1_7
       rect:
         serializedVersion: 2
-        x: 105
-        y: 228
-        width: 145
-        height: 117
+        x: 275
+        y: 52
+        width: 47
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,20 +306,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb593809e5842d680800000000000000
-      internalID: -8731837156529302082
+      spriteID: a3165401006689650800000000000000
+      internalID: 6239849434180837690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aleatorio_8
+      name: Logo 1_8
       rect:
         serializedVersion: 2
-        x: 247
-        y: 295
-        width: 18
-        height: 18
+        x: 458
+        y: 56
+        width: 44
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,52 +328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 041b337e3f47f8490800000000000000
-      internalID: -7741840643521793728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Aleatorio_9
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 228
-        width: 130
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6fa5409e64e9311a0800000000000000
-      internalID: -6839949381651375370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Aleatorio_10
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 7
-        width: 322
-        height: 210
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 488a0686e288d5a70800000000000000
-      internalID: 8817353378362337412
+      spriteID: a280e50deb75b09f0800000000000000
+      internalID: -501210456470452182
       vertices: []
       indices: 
       edges: []
@@ -398,17 +348,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Aleatorio_0: 5370171442336262536
-      Aleatorio_1: 4073001853714427632
-      Aleatorio_10: 8817353378362337412
-      Aleatorio_2: -3891893689160181524
-      Aleatorio_3: 6234422712723314698
-      Aleatorio_4: 4112081261361040318
-      Aleatorio_5: 6145317627633921723
-      Aleatorio_6: 8618522113920723272
-      Aleatorio_7: -8731837156529302082
-      Aleatorio_8: -7741840643521793728
-      Aleatorio_9: -6839949381651375370
+      Logo 1_0: 101209642910601267
+      Logo 1_1: -3936444673696339432
+      Logo 1_2: 9092564933819195439
+      Logo 1_3: 3095362166596880681
+      Logo 1_4: -2291964472640486642
+      Logo 1_5: -7688915094072924390
+      Logo 1_6: -4033926105570047289
+      Logo 1_7: 6239849434180837690
+      Logo 1_8: -501210456470452182
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
