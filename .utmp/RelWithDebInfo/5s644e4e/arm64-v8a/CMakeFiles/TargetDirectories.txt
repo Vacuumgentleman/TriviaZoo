@@ -1,0 +1,5 @@
+/home/tvg/Unity/Projects/TriviaZoo/.utmp/RelWithDebInfo/5s644e4e/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/tvg/Unity/Projects/TriviaZoo/.utmp/RelWithDebInfo/5s644e4e/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/tvg/Unity/Projects/TriviaZoo/.utmp/RelWithDebInfo/5s644e4e/arm64-v8a/GameActivity/CMakeFiles/game.dir
+/home/tvg/Unity/Projects/TriviaZoo/.utmp/RelWithDebInfo/5s644e4e/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+/home/tvg/Unity/Projects/TriviaZoo/.utmp/RelWithDebInfo/5s644e4e/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

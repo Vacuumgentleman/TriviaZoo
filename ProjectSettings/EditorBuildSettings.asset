@@ -17,17 +17,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TriviaZoo/Scenes/Game.unity
     guid: 485c8fd90b2a948739bcb0ea96268013
-  - enabled: 0
-    path: Assets/TriviaZoo/Scenes/Descartadas/TZ Home.unity
-    guid: d4513ae965298743a974b153f0e2a9f9
-  - enabled: 0
-    path: Assets/TriviaZoo/Scenes/Descartadas/TZ ModeSelection.unity
-    guid: 67129bd47349ed8228344720fd71fff6
-  - enabled: 0
-    path: Assets/TriviaZoo/Scenes/Descartadas/TZ CategorySelection.unity
-    guid: 2ac6889a2e15341d6aaf2bb50f16f3ee
-  - enabled: 0
-    path: Assets/TriviaZoo/Scenes/Descartadas/TZ Game.unity
-    guid: 2111af562b013444b8271e2ca0a9951c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

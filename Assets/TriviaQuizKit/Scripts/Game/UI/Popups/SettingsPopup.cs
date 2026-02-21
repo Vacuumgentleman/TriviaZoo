@@ -35,7 +35,7 @@ namespace TriviaQuizKit
 		{
 			ParentScreen.OpenPopup<AlertPopup>("Popups/AlertPopup", popup =>
 			{
-				popup.SetText("Created by gamevanilla. Copyright (C) 2018.");
+				popup.SetText("Aditional Experiences in TriviaZoo.com");
 			});
 		}
 
