@@ -1419,7 +1419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Music
+  m_text: Musica
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e51eeb714dfb419eacd36995b94e50e, type: 2}
   m_sharedMaterial: {fileID: 21016810663687464, guid: 6e51eeb714dfb419eacd36995b94e50e,
@@ -1807,7 +1807,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Settings
+  m_text: Opciones
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e51eeb714dfb419eacd36995b94e50e, type: 2}
   m_sharedMaterial: {fileID: 21016810663687464, guid: 6e51eeb714dfb419eacd36995b94e50e,
@@ -1946,7 +1946,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sound
+  m_text: Sonido
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e51eeb714dfb419eacd36995b94e50e, type: 2}
   m_sharedMaterial: {fileID: 21016810663687464, guid: 6e51eeb714dfb419eacd36995b94e50e,

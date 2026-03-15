@@ -62,13 +62,13 @@ namespace TriviaQuizKit
 			if (result > 0)
 			{
 				ConfettiParticles.Play();
-				CompletedText.text = "Completed!";
+				CompletedText.text = "Completado!";
 				SoundManager.Instance.PlaySound("Win");
 			}
 			else
 			{
 				RainParticles.Play();
-				CompletedText.text = "Failed ...";
+				CompletedText.text = "Fallaste ...";
 				SoundManager.Instance.PlaySound("Lose");
 			}
 		}

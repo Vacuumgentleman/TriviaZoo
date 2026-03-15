@@ -178,7 +178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quit
+  m_text: Salir
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e51eeb714dfb419eacd36995b94e50e, type: 2}
   m_sharedMaterial: {fileID: 21016810663687464, guid: 6e51eeb714dfb419eacd36995b94e50e,
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Select
+  m_text: Escoger
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e51eeb714dfb419eacd36995b94e50e, type: 2}
   m_sharedMaterial: {fileID: 21016810663687464, guid: 6e51eeb714dfb419eacd36995b94e50e,
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.0811011, y: 0, z: -0.69690025, w: 0}
+  m_margin: {x: -26.458649, y: 0, z: -0.69690025, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -583,7 +583,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Category:'
+  m_text: 'Categoria:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e51eeb714dfb419eacd36995b94e50e, type: 2}
   m_sharedMaterial: {fileID: 21016810663687464, guid: 6e51eeb714dfb419eacd36995b94e50e,
@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Remaining:'
+  m_text: 'Restantes:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e51eeb714dfb419eacd36995b94e50e, type: 2}
   m_sharedMaterial: {fileID: 21016810663687464, guid: 6e51eeb714dfb419eacd36995b94e50e,
@@ -2428,7 +2428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 124.98, y: -75.99999}
+  m_AnchoredPosition: {x: 141.63, y: -75.99999}
   m_SizeDelta: {x: 79.12, y: 43.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1535172127
@@ -2871,7 +2871,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 39.2, y: -76}
+  m_AnchoredPosition: {x: 62.1, y: -76}
   m_SizeDelta: {x: 125.75, y: 43.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686196124
@@ -2894,7 +2894,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score:'
+  m_text: 'Puntuacion:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e51eeb714dfb419eacd36995b94e50e, type: 2}
   m_sharedMaterial: {fileID: 21016810663687464, guid: 6e51eeb714dfb419eacd36995b94e50e,
@@ -2961,7 +2961,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.00011815952, y: 0, z: -0.000049971808, w: 0}
+  m_margin: {x: -60.627907, y: 0, z: -0.000049971808, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

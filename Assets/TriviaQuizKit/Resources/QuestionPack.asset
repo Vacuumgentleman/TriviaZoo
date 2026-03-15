@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8970492847147153631
+--- !u!114 &-8077229694288797277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,43 +9,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Script: {fileID: 11500000, guid: da15c3b1d6ca3484ca8d90b11f730504, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.MultipleChoiceQuestion
   Categories:
   - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFEn qu\xE9 ecosistema colombiano habita principalmente el oso de
-    anteojos?"
-  Metadata: Intermedio
+  Question: "\"\xBFPor qu\xE9 se considera al Oso de Anteojos un \"\"arquitecto del
+    bosque\"\"?\""
+  Metadata: Dificil
   Image: {fileID: 0}
+  NumCorrectAnswers: 3
   Answers:
-  - "P\xE1ramos y bosques andinos"
-  - Desiertos
-  - Llanuras del Orinoco
-  - Playas del Caribe
---- !u!114 &-8918466964799409069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -2422636769281858516, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFQu\xE9 tipo de animal es el \xE1guila real de monta\xF1a?"
-  Metadata: Facil
-  Image: {fileID: 0}
-  Answers:
-  - Ave rapaz
-  - "Mam\xEDfero"
-  - Reptil
-  - Anfibio
---- !u!114 &-7885857875669795655
+  - Porque al caminar y romper ramas permite que la luz solar llegue al suelo del
+    bosque
+  - "Porque sus heces contienen semillas que ayudan a reforestar la monta\xF1a."
+  - "Porque crea senderos en la vegetaci\xF3n densa que son usados por otros animales"
+  - "Porque construye represas en los r\xEDos para controlar el flujo de agua"
+--- !u!114 &-7859611413081892595
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,368 +39,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
   Categories:
   - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFQu\xE9 familia de animales pertenece el tigrillo lanudo?"
+  Question: "\xBFA qu\xE9 animal dom\xE9stico se parece m\xE1s el Tigrillo Lanudo
+    por su tama\xF1o?"
   Metadata: Facil
   Image: {fileID: 0}
   Answers:
-  - Felinos
-  - Caninos
-  - "Must\xE9lidos"
-  - Roedores
---- !u!114 &-7082101528452860679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -2422636769281858516, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFCu\xE1l es la principal dieta del \xE1guila real de monta\xF1a en
-    los bosques andinos?"
-  Metadata: Intermedio
-  Image: {fileID: 0}
-  Answers:
-  - "Roedores grandes y monos peque\xF1os"
-  - Peces
-  - Frutas silvestres
-  - Insectos
---- !u!114 &-7061798073409026415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFDe qu\xE9 se alimenta principalmente el jaguar?"
-  Metadata: Intermedio
-  Image: {fileID: 0}
-  Answers:
-  - "Grandes mam\xEDferos y reptiles"
-  - Hierbas
-  - Semillas
-  - "Peces peque\xF1os"
---- !u!114 &-5602610543004563797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFQu\xE9 uso cultural equivocado le han dado algunos humanos al oso
-    de anteojos?"
-  Metadata: Intermedio
-  Image: {fileID: 0}
-  Answers:
-  - Lo cazan por supuestas propiedades medicinales
-  - "Lo consideran animal de compa\xF1\xEDa"
-  - Lo entrenan como animal de circo
-  - "Lo utilizan como guardi\xE1n de cultivos"
---- !u!114 &-5359981961323890187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFQu\xE9 papel ecol\xF3gico cumple el oso de anteojos en su ecosistema?"
-  Metadata: Dificil
-  Image: {fileID: 0}
-  Answers:
-  - Dispersor de semillas
-  - Polinizador
-  - Depredador tope
-  - Controlador de insectos
---- !u!114 &-5254793754269930562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFQu\xE9 otro nombre recibe el tigrillo lanudo?"
-  Metadata: Intermedio
-  Image: {fileID: 0}
-  Answers:
-  - Oncilla
-  - "Le\xF3n de p\xE1ramo"
-  - Mico tigre
-  - "Tigrillo amaz\xF3nico"
---- !u!114 &-3208738848311907890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFQu\xE9 caracter\xEDstica diferencia la mordida del jaguar frente
-    a otros felinos?"
-  Metadata: Dificil
-  Image: {fileID: 0}
-  Answers:
-  - "Es capaz de perforar cr\xE1neos y caparazones"
-  - "Es la m\xE1s silenciosa"
-  - "Es la m\xE1s lenta"
-  - No usa colmillos
---- !u!114 &-512833411074399871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFCu\xE1l es el estado de conservaci\xF3n del tigrillo lanudo en Colombia?"
-  Metadata: Dificil
-  Image: {fileID: 0}
-  Answers:
-  - Vulnerable
-  - "Preocupaci\xF3n menor"
-  - Extinto
-  - Casi amenazado
---- !u!114 &-374384672124788734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -2422636769281858516, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFQu\xE9 caracter\xEDstica f\xEDsica distingue al \xE1guila real de
-    monta\xF1a?"
-  Metadata: Dificil
-  Image: {fileID: 0}
-  Answers:
-  - "Tiene una cresta er\xE9ctil en la cabeza"
-  - Picos de colores brillantes
-  - "Garras sin u\xF1as"
-  - Plumaje completamente blanco
---- !u!114 &-221567974176108160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFPor qu\xE9 se le llama \u201Coso de anteojos\u201D?"
-  Metadata: Facil
-  Image: {fileID: 0}
-  Answers:
-  - Por las manchas alrededor de sus ojos
-  - Porque usa gafas en invierno
-  - Porque vive en cuevas oscuras
-  - "Por su excelente visi\xF3n nocturna"
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6cb37bccd4552c47b034ee4f613cac0, type: 3}
-  m_Name: QuestionPack
-  m_EditorClassIdentifier: 
-  Name: Default
-  Questions:
-  - {fileID: -7885857875669795655}
-  - {fileID: 2168392212324367262}
-  - {fileID: -8918466964799409069}
-  - {fileID: -221567974176108160}
-  - {fileID: 8024939018360828167}
-  - {fileID: 7830007985366822522}
-  - {fileID: 8038454031753073496}
-  - {fileID: 3348459235127474059}
-  - {fileID: 5808299488542749881}
-  - {fileID: 4466577689737279612}
-  - {fileID: -7082101528452860679}
-  - {fileID: -8970492847147153631}
-  - {fileID: 2041184137490877033}
-  - {fileID: -5254793754269930562}
-  - {fileID: 7612474579051508712}
-  - {fileID: 7067674466126493171}
-  - {fileID: 5644860629116897260}
-  - {fileID: 6235768934044055197}
-  - {fileID: -5602610543004563797}
-  - {fileID: -7061798073409026415}
-  - {fileID: -512833411074399871}
-  - {fileID: 1623414114156615201}
-  - {fileID: -374384672124788734}
-  - {fileID: -3208738848311907890}
-  - {fileID: -5359981961323890187}
-  - {fileID: 2256521258487555170}
---- !u!114 &1623414114156615201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFQu\xE9 factor humano afecta m\xE1s la supervivencia del tigrillo
-    lanudo?"
-  Metadata: Dificil
-  Image: {fileID: 0}
-  Answers:
-  - "Tala y fragmentaci\xF3n de bosques"
-  - Turismo
-  - Pesca artesanal
-  - "Miner\xEDa de oro submarina"
---- !u!114 &2041184137490877033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFCu\xE1l es el \xE1rea de distribuci\xF3n natural del jaguar en Colombia?"
-  Metadata: Intermedio
-  Image: {fileID: 0}
-  Answers:
-  - "Todo el pa\xEDs excepto las altas monta\xF1as"
-  - Solo en el Caribe
-  - "Exclusivamente en Bogot\xE1"
-  - "\xDAnicamente en p\xE1ramos"
---- !u!114 &2168392212324367262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFQu\xE9 animal se parece m\xE1s al jaguar?"
-  Metadata: Facil
-  Image: {fileID: 0}
-  Answers:
-  - Leopardo
-  - Puma
-  - Lince
-  - "Gato mont\xE9s"
---- !u!114 &2256521258487555170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -2422636769281858516, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFCu\xE1l es el estado de conservaci\xF3n del \xE1guila real de monta\xF1a?"
-  Metadata: Dificil
-  Image: {fileID: 0}
-  Answers:
-  - "En peligro de extinci\xF3n"
-  - "Preocupaci\xF3n menor"
-  - Casi amenazada
-  - Vulner
---- !u!114 &3348459235127474059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFQu\xE9 lo hace \xFAnico al oso de anteojos?"
-  Metadata: Facil
-  Image: {fileID: 0}
-  Answers:
-  - "Es el \xFAnico oso sudamericano"
-  - "Es el \xFAnico omn\xEDvoro"
-  - "Es el m\xE1s grande del planeta"
-  - "Es el \xFAnico que hiberna en desiertos"
---- !u!114 &4466577689737279612
+  - "Un gato dom\xE9stico"
+  - "Un h\xE1mster"
+  - Un perro labrador
+  - Un conejo de monte
+--- !u!114 &-7150439731234610551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -443,7 +71,137 @@ MonoBehaviour:
   - Desiertos
   - Manglares
   - Llanuras de sabana
---- !u!114 &5644860629116897260
+--- !u!114 &-7143232579827800171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15c3b1d6ca3484ca8d90b11f730504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.MultipleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 rasgos f\xEDsicos ayudan a identificar a un Tigrillo Lanudo?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  NumCorrectAnswers: 4
+  Answers:
+  - "Ojos grandes de color \xE1mbar o caf\xE9"
+  - "Orejas redondeadas con una mancha blanca atr\xE1s"
+  - Cuerpo esbelto y patas largas
+  - Rosetas (manchas) negras sobre un fondo ocre o amarillento
+--- !u!114 &-5529720644615568177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24d53e71aa71f2488e1d2c1a3b6cd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.TrueFalseQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "Su periodo de gestaci\xF3n es de aproximadamente 110 d\xEDas igual que
+    el de un le\xF3n."
+  Metadata: Dificil
+  Image: {fileID: 0}
+  IsTrue: 0
+--- !u!114 &-5358457022594452441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFC\xF3mo es la cola del Tigrillo Lanudo en relaci\xF3n con su cuerpo?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  Answers:
+  - "Larga midiendo m\xE1s de la mitad de su cuerpo"
+  - Muy corta casi invisible
+  - Gruesa como la de un castor
+  - No tiene cola
+--- !u!114 &-5087283070618038555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 papel ecol\xF3gico cumple el oso de anteojos en su ecosistema?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  Answers:
+  - Dispersor de semillas
+  - Polinizador
+  - Depredador tope
+  - Controlador de insectos
+--- !u!114 &-4963200342253266738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFEn qu\xE9 momento del d\xEDa es m\xE1s activo el Tigrillo Lanudo?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  Answers:
+  - "Durante la noche y el crep\xFAsculo"
+  - "Al mediod\xEDa cuando hay m\xE1s sol"
+  - "Solo en las ma\xF1anas muy tempranas"
+  - Es un animal que no duerme
+--- !u!114 &-4463799195561429606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -2422636769281858516, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFCu\xE1l es el estado de conservaci\xF3n del \xE1guila real de monta\xF1a?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  Answers:
+  - "En peligro de extinci\xF3n"
+  - "Preocupaci\xF3n menor"
+  - Casi amenazada
+  - Vulner
+--- !u!114 &-4389962194736742254
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -465,29 +223,7 @@ MonoBehaviour:
   - "Esp\xEDritu de la cosecha"
   - "Animal dom\xE9stico"
   - "Esp\xEDritu de la lluvia"
---- !u!114 &5808299488542749881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFEl jaguar es buen\u2026?"
-  Metadata: Facil
-  Image: {fileID: 0}
-  Answers:
-  - Nadador
-  - Volador
-  - Escarbador
-  - Escalador de hielo
---- !u!114 &6235768934044055197
+--- !u!114 &-4268928007198966337
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -501,37 +237,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
   Categories:
   - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFEn qu\xE9 altitudes de Colombia se encuentra el tigrillo lanudo?"
-  Metadata: Intermedio
+  Question: "\xBFCu\xE1l es el nombre cient\xEDfico oficial con el que se identifica
+    al Tigrillo Lanudo en la comunidad acad\xE9mica?"
+  Metadata: Dificil
   Image: {fileID: 0}
   Answers:
-  - Entre 500 y 4800 m s n m
-  - Menos de 100 m s n m
-  - Entre 5000 y 6000 m s n m
-  - Solo en el nivel del mar
---- !u!114 &7067674466126493171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
-  Categories:
-  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFC\xF3mo se desplaza el oso de anteojos?"
-  Metadata: Intermedio
-  Image: {fileID: 0}
-  Answers:
-  - Solitario
-  - En grandes manadas
-  - En parejas permanentes
-  - Solo en grupos familiares
---- !u!114 &7612474579051508712
+  - Leopardus tigrinus
+  - Panthera onca
+  - Leopardus pardalis
+  - Felis concolor
+--- !u!114 &-3738573582711716863
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -554,7 +269,213 @@ MonoBehaviour:
   - Cordillera Occidental
   - Sierra Nevada de Santa Marta
   - "Serran\xEDa de La Macarena"
---- !u!114 &7830007985366822522
+--- !u!114 &-3608344415838417015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15c3b1d6ca3484ca8d90b11f730504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.MultipleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 amenazas antr\xF3picas (causadas por el hombre) ponen en
+    riesgo su supervivencia?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  NumCorrectAnswers: 4
+  Answers:
+  - "Fragmentaci\xF3n del bosque por expansi\xF3n de cultivos de papa"
+  - "Atropellamientos en carreteras de alta monta\xF1a"
+  - "Ataques de perros dom\xE9sticos o asilvestrados"
+  - "Transmisi\xF3n de enfermedades por contacto con gatos dom\xE9sticos"
+--- !u!114 &-3512286824408711238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 factor humano afecta m\xE1s la supervivencia del tigrillo
+    lanudo?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  Answers:
+  - "Tala y fragmentaci\xF3n de bosques"
+  - Turismo
+  - Pesca artesanal
+  - "Miner\xEDa de oro submarina"
+--- !u!114 &-3289809428492725068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15c3b1d6ca3484ca8d90b11f730504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.MultipleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 elementos forman parte de la dieta natural de un Tigrillo
+    Lanudo?"
+  Metadata: Facil
+  Image: {fileID: 0}
+  NumCorrectAnswers: 3
+  Answers:
+  - "Peque\xF1os roedores y ratones de monte"
+  - "Aves peque\xF1as que anidan en el suelo o arbustos"
+  - "Lagartijas y peque\xF1os reptiles"
+  - Frutas maduras como el mango
+--- !u!114 &-2601199930042725368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFC\xF3mo es principalmente la dieta del tigrillo lanudo?"
+  Metadata: Facil
+  Image: {fileID: 0}
+  Answers:
+  - "Carn\xEDvora"
+  - "Herb\xEDvora"
+  - "Insect\xEDvora"
+  - "Frug\xEDvora"
+--- !u!114 &-2586379995410434396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 otro nombre recibe el tigrillo lanudo?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  Answers:
+  - Oncilla
+  - "Le\xF3n de p\xE1ramo"
+  - Mico tigre
+  - "Tigrillo amaz\xF3nico"
+--- !u!114 &-2211890428736101555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15c3b1d6ca3484ca8d90b11f730504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.MultipleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFCu\xE1les son los h\xE1bitats preferidos por el Tigrillo en los
+    Andes colombianos?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  NumCorrectAnswers: 2
+  Answers:
+  - Bosques de niebla.
+  - "Zonas de P\xE1ramo"
+  - Desiertos costeros.
+  - Playas de arena blanca
+--- !u!114 &-1748748822466511395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15c3b1d6ca3484ca8d90b11f730504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.MultipleChoiceQuestion
+  Categories:
+  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 comportamientos son t\xEDpicos del Oso de Anteojos para alimentarse
+    en los bosques?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  NumCorrectAnswers: 3
+  Answers:
+  - "Subir a las copas de los \xE1rboles para alcanzar frutos y cogollos"
+  - Construir plataformas de ramas en las alturas para sentarse a comer
+  - "Desgarrar troncos ca\xEDdos para buscar larvas e insectos"
+  - Cazar venados en manadas organizadas
+--- !u!114 &-1692706924957432484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24d53e71aa71f2488e1d2c1a3b6cd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.TrueFalseQuestion
+  Categories:
+  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: A diferencia de los osos del Polo Norte o de los bosques templados el
+    Oso de Anteojos NO hiberna.
+  Metadata: Facil
+  Image: {fileID: 0}
+  IsTrue: 1
+--- !u!114 &-1674775065707127535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15c3b1d6ca3484ca8d90b11f730504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.MultipleChoiceQuestion
+  Categories:
+  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 adaptaciones tiene el \xC1guila Real de Monta\xF1a para vivir
+    en los bosques altos?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  NumCorrectAnswers: 2
+  Answers:
+  - "Alas anchas que le permiten maniobrar entre los \xE1rboles densos"
+  - Garras extremadamente fuertes para cargar presas por encima del dosel
+  - Un cuello largo similar al de los flamencos para buscar comida en el agua
+  - "Pies con membranas para nadar en los r\xEDos de monta\xF1a"
+--- !u!114 &-1280113648077634713
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -577,7 +498,199 @@ MonoBehaviour:
   - 50 cm
   - 3.5 metros
   - 5 metros
---- !u!114 &8024939018360828167
+--- !u!114 &-986041503314511768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24d53e71aa71f2488e1d2c1a3b6cd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.TrueFalseQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\"Se le llama \"\"Tigrillo\"\" porque es el hijo peque\xF1o de un Tigre
+    de bengala\""
+  Metadata: Facil
+  Image: {fileID: 0}
+  IsTrue: 0
+--- !u!114 &-514292412988397125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24d53e71aa71f2488e1d2c1a3b6cd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.TrueFalseQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: El Tigrillo Lanudo es un animal que vive en grandes manadas de hasta
+    20 individuos
+  Metadata: Facil
+  Image: {fileID: 0}
+  IsTrue: 0
+--- !u!114 &-97693990488941844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -2422636769281858516, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 caracter\xEDstica f\xEDsica distingue al \xE1guila real de
+    monta\xF1a?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  Answers:
+  - "Tiene una cresta er\xE9ctil en la cabeza"
+  - Picos de colores brillantes
+  - "Garras sin u\xF1as"
+  - Plumaje completamente blanco
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6cb37bccd4552c47b034ee4f613cac0, type: 3}
+  m_Name: QuestionPack
+  m_EditorClassIdentifier: 
+  Name: Default
+  Questions:
+  - {fileID: -514292412988397125}
+  - {fileID: -986041503314511768}
+  - {fileID: 7238642235224403193}
+  - {fileID: 504784592714255021}
+  - {fileID: 2990180942965671924}
+  - {fileID: -5529720644615568177}
+  - {fileID: 7492137247009576145}
+  - {fileID: -1692706924957432484}
+  - {fileID: 8504192987386103174}
+  - {fileID: 2425274326855575832}
+  - {fileID: 918206190084847517}
+  - {fileID: 963827444518785321}
+  - {fileID: 1608997182646140545}
+  - {fileID: -1280113648077634713}
+  - {fileID: -2601199930042725368}
+  - {fileID: 2527040412302144570}
+  - {fileID: 6778360333279226562}
+  - {fileID: 8818838261049603153}
+  - {fileID: -7150439731234610551}
+  - {fileID: 5778798128054161930}
+  - {fileID: 5570697906383587812}
+  - {fileID: 2372402084067598424}
+  - {fileID: -2586379995410434396}
+  - {fileID: -3738573582711716863}
+  - {fileID: 1879826865128410855}
+  - {fileID: -4389962194736742254}
+  - {fileID: 3009866135674997123}
+  - {fileID: 4702424185167367525}
+  - {fileID: 8514550845466425832}
+  - {fileID: 7283736038912779178}
+  - {fileID: 3658284023677806362}
+  - {fileID: -3512286824408711238}
+  - {fileID: -97693990488941844}
+  - {fileID: 8282924907099545594}
+  - {fileID: -5087283070618038555}
+  - {fileID: -4463799195561429606}
+  - {fileID: -4268928007198966337}
+  - {fileID: -7859611413081892595}
+  - {fileID: 4313718121362905376}
+  - {fileID: -4963200342253266738}
+  - {fileID: -5358457022594452441}
+  - {fileID: 8605513478258240955}
+  - {fileID: 5229474499095291570}
+  - {fileID: -1748748822466511395}
+  - {fileID: 3474402089103485164}
+  - {fileID: 4532193768396654768}
+  - {fileID: -1674775065707127535}
+  - {fileID: 8763955024602853306}
+  - {fileID: -8077229694288797277}
+  - {fileID: -2211890428736101555}
+  - {fileID: -3289809428492725068}
+  - {fileID: -7143232579827800171}
+  - {fileID: -3608344415838417015}
+  - {fileID: 6358482956763699377}
+--- !u!114 &504784592714255021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24d53e71aa71f2488e1d2c1a3b6cd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.TrueFalseQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "El Tigrillo Lanudo puede tener cr\xEDas de color completamente negro
+    debido al melanismo"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  IsTrue: 1
+--- !u!114 &918206190084847517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -2422636769281858516, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 tipo de animal es el \xE1guila real de monta\xF1a?"
+  Metadata: Facil
+  Image: {fileID: 0}
+  Answers:
+  - Ave rapaz
+  - "Mam\xEDfero"
+  - Reptil
+  - Anfibio
+--- !u!114 &963827444518785321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFPor qu\xE9 se le llama \u201Coso de anteojos\u201D?"
+  Metadata: Facil
+  Image: {fileID: 0}
+  Answers:
+  - Por las manchas alrededor de sus ojos
+  - Porque usa gafas en invierno
+  - Porque vive en cuevas oscuras
+  - "Por su excelente visi\xF3n nocturna"
+--- !u!114 &1608997182646140545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -599,7 +712,114 @@ MonoBehaviour:
   - 50 cm de altura
   - 5 metros de pie
   - 10 metros de pie
---- !u!114 &8038454031753073496
+--- !u!114 &1879826865128410855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFC\xF3mo se desplaza el oso de anteojos?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  Answers:
+  - Solitario
+  - En grandes manadas
+  - En parejas permanentes
+  - Solo en grupos familiares
+--- !u!114 &2372402084067598424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFCu\xE1l es el \xE1rea de distribuci\xF3n natural del jaguar en Colombia?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  Answers:
+  - "Todo el pa\xEDs excepto las altas monta\xF1as"
+  - Solo en el Caribe
+  - "Exclusivamente en Bogot\xE1"
+  - "\xDAnicamente en p\xE1ramos"
+--- !u!114 &2425274326855575832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 animal se parece m\xE1s al jaguar?"
+  Metadata: Facil
+  Image: {fileID: 0}
+  Answers:
+  - Leopardo
+  - Puma
+  - Lince
+  - "Gato mont\xE9s"
+--- !u!114 &2527040412302144570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 lo hace \xFAnico al oso de anteojos?"
+  Metadata: Facil
+  Image: {fileID: 0}
+  Answers:
+  - "Es el \xFAnico oso sudamericano"
+  - "Es el \xFAnico omn\xEDvoro"
+  - "Es el m\xE1s grande del planeta"
+  - "Es el \xFAnico que hiberna en desiertos"
+--- !u!114 &2990180942965671924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24d53e71aa71f2488e1d2c1a3b6cd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.TrueFalseQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: '"El Tigrillo Lanudo es considerado una ""especie sombrilla"" para el
+    ecosistema de los Andes."'
+  Metadata: Facil
+  Image: {fileID: 0}
+  IsTrue: 1
+--- !u!114 &3009866135674997123
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -613,11 +833,439 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
   Categories:
   - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
-  Question: "\xBFC\xF3mo es principalmente la dieta del tigrillo lanudo?"
+  Question: "\xBFEn qu\xE9 altitudes de Colombia se encuentra el tigrillo lanudo?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  Answers:
+  - Entre 500 y 4800 m s n m
+  - Menos de 100 m s n m
+  - Entre 5000 y 6000 m s n m
+  - Solo en el nivel del mar
+--- !u!114 &3474402089103485164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15c3b1d6ca3484ca8d90b11f730504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.MultipleChoiceQuestion
+  Categories:
+  - {fileID: -2422636769281858516, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 caracter\xEDsticas f\xEDsicas son clave para identificar
+    a un \xC1guila Real de Monta\xF1a adulta?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  NumCorrectAnswers: 3
+  Answers:
+  - "Ojos de color naranja intenso o \xE1mbar."
+  - Una cresta de plumas negras prominente en la nuca.
+  - Garras extremadamente potentes para capturar presas como monos o pavas
+  - Patas delgadas y sin plumas hasta los dedos
+--- !u!114 &3658284023677806362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFCu\xE1l es el estado de conservaci\xF3n del tigrillo lanudo en Colombia?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  Answers:
+  - Vulnerable
+  - "Preocupaci\xF3n menor"
+  - Extinto
+  - Casi amenazado
+--- !u!114 &4313718121362905376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\"\xBFCu\xE1l es la principal caracter\xEDstica de su pelaje que le
+    da su nombre \"\"lanudo\"\"?\""
   Metadata: Facil
   Image: {fileID: 0}
   Answers:
-  - "Carn\xEDvora"
-  - "Herb\xEDvora"
-  - "Insect\xEDvora"
-  - "Frug\xEDvora"
+  - "Es grueso y denso para protegerlo del fr\xEDo de la monta\xF1a"
+  - No tiene pelo es pura piel
+  - "Cambia de color seg\xFAn la estaci\xF3n del a\xF1o"
+  - Es de color verde para camuflarse
+--- !u!114 &4532193768396654768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15c3b1d6ca3484ca8d90b11f730504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.MultipleChoiceQuestion
+  Categories:
+  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFEn qu\xE9 regiones de Colombia es posible encontrar al Jaguar?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  NumCorrectAnswers: 2
+  Answers:
+  - "Amazon\xEDa y selvas del Choc\xF3."
+  - Llanos Orientales
+  - Glaciares y picos con nieve por encima de los 5.000 metros.
+  - Region Insular
+--- !u!114 &4702424185167367525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 uso cultural equivocado le han dado algunos humanos al oso
+    de anteojos?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  Answers:
+  - Lo cazan por supuestas propiedades medicinales
+  - "Lo consideran animal de compa\xF1\xEDa"
+  - Lo entrenan como animal de circo
+  - "Lo utilizan como guardi\xE1n de cultivos"
+--- !u!114 &5229474499095291570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFA qu\xE9 linaje pertenece el Leopardus tigrinus?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  Answers:
+  - Linaje del Ocelote
+  - Linaje del Puma
+  - "Linaje del Leopardo asi\xE1tico"
+  - "Linaje de los gatos dom\xE9sticos europeos"
+--- !u!114 &5570697906383587812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: 1207694988285569143, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFEn qu\xE9 ecosistema colombiano habita principalmente el oso de
+    anteojos?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  Answers:
+  - "P\xE1ramos y bosques andinos"
+  - Desiertos
+  - Llanuras del Orinoco
+  - Playas del Caribe
+--- !u!114 &5778798128054161930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -2422636769281858516, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFCu\xE1l es la principal dieta del \xE1guila real de monta\xF1a en
+    los bosques andinos?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  Answers:
+  - "Roedores grandes y monos peque\xF1os"
+  - Peces
+  - Frutas silvestres
+  - Insectos
+--- !u!114 &6358482956763699377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15c3b1d6ca3484ca8d90b11f730504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.MultipleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 lo diferencia cient\xEDficamente del Tigrillo Margay (Leopardus
+    wiedii)?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  NumCorrectAnswers: 2
+  Answers:
+  - "El Tigrillo Lanudo tiene pies m\xE1s peque\xF1os y no puede rotar los tobillos
+    180\xB0"
+  - "El pelaje del lanudo es m\xE1s opaco y \xE1spero al tacto"
+  - El Tigrillo Lanudo vive en el agua y el Margay no
+  - "El Tigrillo Lanudo es tres veces m\xE1s grande que el Margay"
+--- !u!114 &6778360333279226562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFEl jaguar es buen\u2026?"
+  Metadata: Facil
+  Image: {fileID: 0}
+  Answers:
+  - Nadador
+  - Volador
+  - Escarbador
+  - Escalador de hielo
+--- !u!114 &7238642235224403193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24d53e71aa71f2488e1d2c1a3b6cd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.TrueFalseQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "A diferencia de otros felinos al Tigrillo Lanudo le gusta vivir en zonas
+    fr\xEDas y de gran altura"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  IsTrue: 1
+--- !u!114 &7283736038912779178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFC\xF3mo se llama el fen\xF3meno biol\xF3gico que hace que algunos
+    Jaguares tengan el pelaje completamente negro?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  Answers:
+  - Melanismo
+  - Camuflaje nocturno
+  - Albinismo
+  - "Mutaci\xF3n de sombra"
+--- !u!114 &7492137247009576145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24d53e71aa71f2488e1d2c1a3b6cd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.TrueFalseQuestion
+  Categories:
+  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "El Jaguar tiene la capacidad de rugir mientras que el Tigrillo Lanudo
+    emite sonidos m\xE1s parecidos a un ronroneo o maullido."
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  IsTrue: 1
+--- !u!114 &8282924907099545594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 caracter\xEDstica diferencia la mordida del jaguar frente
+    a otros felinos?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  Answers:
+  - "Es capaz de perforar cr\xE1neos y caparazones"
+  - "Es la m\xE1s silenciosa"
+  - "Es la m\xE1s lenta"
+  - No usa colmillos
+--- !u!114 &8504192987386103174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 familia de animales pertenece el tigrillo lanudo?"
+  Metadata: Facil
+  Image: {fileID: 0}
+  Answers:
+  - Felinos
+  - Caninos
+  - "Must\xE9lidos"
+  - Roedores
+--- !u!114 &8514550845466425832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -8231707837316754802, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFDe qu\xE9 se alimenta principalmente el jaguar?"
+  Metadata: Intermedio
+  Image: {fileID: 0}
+  Answers:
+  - "Grandes mam\xEDferos y reptiles"
+  - Hierbas
+  - Semillas
+  - "Peces peque\xF1os"
+--- !u!114 &8605513478258240955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFCu\xE1l es el l\xEDmite altitudinal m\xE1ximo donde se ha registrado
+    la presencia de este felino en Colombia?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  Answers:
+  - 4.800 m s. n. m.
+  - 1.000 m s. n. m.
+  - 2.500 m s. n. m.
+  - Solo vive al nivel del mar
+--- !u!114 &8763955024602853306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15c3b1d6ca3484ca8d90b11f730504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.MultipleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFQu\xE9 caracter\xEDsticas distinguen al Tigrillo Lanudo (Leopardus
+    tigrinus) de su pariente el Ocelote?"
+  Metadata: Dificil
+  Image: {fileID: 0}
+  NumCorrectAnswers: 2
+  Answers:
+  - "El Tigrillo Lanudo es significativamente m\xE1s peque\xF1o"
+  - "Su pelaje es mucho m\xE1s grueso y denso para resistir el fr\xEDo de los Andes"
+  - "El Tigrillo Lanudo tiene manchas en forma de c\xEDrculos perfectos"
+  - El Tigrillo Lanudo no tiene cola
+--- !u!114 &8818838261049603153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99cf0eea6ea5e741beb0d729a227aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.SingleChoiceQuestion
+  Categories:
+  - {fileID: -7750680459389162525, guid: 118608492818c1640955b4a10f7de8f0, type: 2}
+  Question: "\xBFEl Tigrillo Lanudo es un animal que prefiere cazar en el agua como
+    el Jaguar?"
+  Metadata: Facil
+  Image: {fileID: 0}
+  Answers:
+  - "No prefiere ambientes terrestres y es un gran trepador de \xE1rboles"
+  - "S\xED es un excelente pescador de r\xEDos profundos"
+  - Solo entra al agua para cazar ranas venenosas
+  - No porque su pelaje lanudo absorbe demasiada agua y se hunde
