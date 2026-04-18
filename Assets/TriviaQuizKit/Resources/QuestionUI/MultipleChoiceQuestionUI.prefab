@@ -55,7 +55,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224839639386686282}
   - component: {fileID: 222464365614115324}
-  - component: {fileID: 114299663141895362}
   m_Layer: 5
   m_Name: 'TMP SubMeshUI [RobotoCondensed-Regular SDF Material + RobotoCondensed-Bold
     SDF Atlas]'
@@ -91,34 +90,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095670465333858}
   m_CullTransparentMesh: 1
---- !u!114 &114299663141895362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095670465333858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_fontAsset: {fileID: 11400000, guid: 04f090996aae7463d918156bd4ff8ce2, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 0
-  m_TextComponent: {fileID: 114877787644957020}
-  m_materialReferenceIndex: 1
 --- !u!1 &1174792327171314
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +301,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224649596542535380}
   - component: {fileID: 222232583327375282}
-  - component: {fileID: 114466979170225072}
   m_Layer: 5
   m_Name: 'TMP SubMeshUI [RobotoCondensed-Regular SDF Material + RobotoCondensed-Bold
     SDF Atlas]'
@@ -366,34 +336,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543667023425346}
   m_CullTransparentMesh: 1
---- !u!114 &114466979170225072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543667023425346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_fontAsset: {fileID: 11400000, guid: 04f090996aae7463d918156bd4ff8ce2, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 0
-  m_TextComponent: {fileID: 114112600269861934}
-  m_materialReferenceIndex: 1
 --- !u!1 &1640821763522568
 GameObject:
   m_ObjectHideFlags: 0

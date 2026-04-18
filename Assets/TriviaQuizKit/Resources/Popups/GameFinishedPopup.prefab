@@ -140,7 +140,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224281642525682518}
   - component: {fileID: 222362738600509462}
-  - component: {fileID: 114483485161705670}
   m_Layer: 5
   m_Name: 'TMP SubMeshUI [RobotoCondensed-Regular SDF Material + RobotoCondensed-Bold
     SDF Atlas]'
@@ -176,34 +175,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027708611869958}
   m_CullTransparentMesh: 1
---- !u!114 &114483485161705670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027708611869958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_fontAsset: {fileID: 11400000, guid: 04f090996aae7463d918156bd4ff8ce2, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 0
-  m_TextComponent: {fileID: 114298431792820588}
-  m_materialReferenceIndex: 1
 --- !u!1 &1035569556767710
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,14 +313,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4801976, g: 0.9339623, b: 0.66506475, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bbfbf42edffc44d578c3bd8bb81f211a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c9de3b62099e4fe98b05908ebfb3511, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -422,7 +393,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224504957979879224}
   - component: {fileID: 222003838345671548}
-  - component: {fileID: 114427105755742380}
   m_Layer: 5
   m_Name: 'TMP SubMeshUI [RobotoCondensed-Regular SDF Material + RobotoCondensed-Bold
     SDF Atlas]'
@@ -458,34 +428,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132450301367994}
   m_CullTransparentMesh: 1
---- !u!114 &114427105755742380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132450301367994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_fontAsset: {fileID: 11400000, guid: 04f090996aae7463d918156bd4ff8ce2, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 0
-  m_TextComponent: {fileID: 114788204498484840}
-  m_materialReferenceIndex: 1
 --- !u!1 &1138110950561904
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +558,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224876684191817550}
   - component: {fileID: 222748487098073232}
-  - component: {fileID: 114926157881920508}
   m_Layer: 5
   m_Name: 'TMP SubMeshUI [RobotoCondensed-Regular SDF Material + RobotoCondensed-Bold
     SDF Atlas]'
@@ -652,34 +593,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155906173429114}
   m_CullTransparentMesh: 1
---- !u!114 &114926157881920508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1155906173429114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_fontAsset: {fileID: 11400000, guid: 04f090996aae7463d918156bd4ff8ce2, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 0
-  m_TextComponent: {fileID: 114259424117350596}
-  m_materialReferenceIndex: 1
 --- !u!1 &1158939747115214
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +640,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224228166704923246}
   - component: {fileID: 222595069608566444}
-  - component: {fileID: 114967542625685726}
   m_Layer: 5
   m_Name: 'TMP SubMeshUI [RobotoCondensed-Regular SDF Material + RobotoCondensed-Bold
     SDF Atlas]'
@@ -763,34 +675,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186479686686454}
   m_CullTransparentMesh: 1
---- !u!114 &114967542625685726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186479686686454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_fontAsset: {fileID: 11400000, guid: 04f090996aae7463d918156bd4ff8ce2, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 0
-  m_TextComponent: {fileID: 114168312721764376}
-  m_materialReferenceIndex: 1
 --- !u!1 &1249037368792662
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16862746, g: 0.2, b: 0.24705882, a: 1}
+  m_Color: {r: 0.1014151, g: 0.4056604, b: 0.22536692, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6661,7 +6545,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224146580984088978}
   - component: {fileID: 222546871363687874}
-  - component: {fileID: 114347107758215614}
   m_Layer: 5
   m_Name: 'TMP SubMeshUI [RobotoCondensed-Regular SDF Material + RobotoCondensed-Bold
     SDF Atlas]'
@@ -6697,34 +6580,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707891625641418}
   m_CullTransparentMesh: 1
---- !u!114 &114347107758215614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707891625641418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_fontAsset: {fileID: 11400000, guid: 04f090996aae7463d918156bd4ff8ce2, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 0
-  m_TextComponent: {fileID: 114304304748041378}
-  m_materialReferenceIndex: 1
 --- !u!1 &1746705294717290
 GameObject:
   m_ObjectHideFlags: 0
@@ -7165,7 +7020,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224840117649128474}
   - component: {fileID: 222838872783385570}
-  - component: {fileID: 114199593438279436}
   m_Layer: 5
   m_Name: 'TMP SubMeshUI [RobotoCondensed-Regular SDF Material + RobotoCondensed-Bold
     SDF Atlas]'
@@ -7201,34 +7055,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900366826355214}
   m_CullTransparentMesh: 1
---- !u!114 &114199593438279436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1900366826355214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_fontAsset: {fileID: 11400000, guid: 04f090996aae7463d918156bd4ff8ce2, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 0
-  m_TextComponent: {fileID: 114960577779494896}
-  m_materialReferenceIndex: 1
 --- !u!1 &1903135776699702
 GameObject:
   m_ObjectHideFlags: 0
