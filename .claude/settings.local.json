@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /home/tvg/Unity/Projects/TriviaZoo log --oneline)"
+    ]
+  }
+}

@@ -39,7 +39,7 @@ namespace TriviaQuizKit
 		public TextMeshProUGUI NumAnsweredText;
 		public TextMeshProUGUI ScoreText;
 		public TextMeshProUGUI NumRemainingQuestionsText;
-		public TextMeshProUGUI CategoryText;
+		public Image CategoryImage;
 		public TextMeshProUGUI CountdownText;
 		public Image CountdownBgImage;
 		public Image CountdownImage;
@@ -337,7 +337,11 @@ namespace TriviaQuizKit
 			}
 			questionUi.OnQuestionLoaded(this, question);
 
-			CategoryText.text = question.Categories[0].Name;
+			if (CategoryImage != null)
+			{
+				var cat = question.Categories[0];
+				CategoryImage.sprite = cat.Sprite != null ? cat.Sprite : gameConfig.AnyCategorySprite;
+			}
 		}
 
 		public void OnPlayerAnswered(int answerIdx)

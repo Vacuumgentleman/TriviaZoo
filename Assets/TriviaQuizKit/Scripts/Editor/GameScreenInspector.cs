@@ -63,8 +63,8 @@ namespace TriviaQuizKit
             var numRemainingQuestionsText = serializedObject.FindProperty("NumRemainingQuestionsText");
             EditorGUILayout.PropertyField(numRemainingQuestionsText, new GUIContent("NumRemainingQuestionsText"), GUILayout.MaxWidth(uiFieldWidth));
 
-            var categoryText = serializedObject.FindProperty("CategoryText");
-            EditorGUILayout.PropertyField(categoryText, new GUIContent("CategoryText"), GUILayout.MaxWidth(uiFieldWidth));
+            var categoryImage = serializedObject.FindProperty("CategoryImage");
+            EditorGUILayout.PropertyField(categoryImage, new GUIContent("CategoryImage"), GUILayout.MaxWidth(uiFieldWidth));
 
             var countdownText = serializedObject.FindProperty("CountdownText");
             EditorGUILayout.PropertyField(countdownText, new GUIContent("CountdownText"), GUILayout.MaxWidth(uiFieldWidth));

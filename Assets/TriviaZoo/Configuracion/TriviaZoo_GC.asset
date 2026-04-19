@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
   Name: Jaguar
-  Sprite: {fileID: 21300000, guid: 0a00812215a7889e98cbdce976928b40, type: 3}
+  Sprite: {fileID: 21300000, guid: 6faea479fbcb9b62ea4d38ca77f1a284, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
   - {fileID: 4933456055490455956}
   - {fileID: -5581858008233161885}
   - {fileID: 3103592366461630950}
-  AnyCategorySprite: {fileID: 21300000, guid: 2855c9d3b76b1030e90352a9733b21da, type: 3}
+  AnyCategorySprite: {fileID: 21300000, guid: bb560793450c86005ad544ca22f80e9f, type: 3}
   NumQuestions: 5
   NumQuestionsNeededForBronzeTrophy: 3
   NumQuestionsNeededForSilverTrophy: 4
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
   Name: Oso
-  Sprite: {fileID: 21300000, guid: 06bf61a822c39e437942df120fa86fc8, type: 3}
+  Sprite: {fileID: 21300000, guid: 50cf391049027e6aa9608779aeb097a5, type: 3}
 --- !u!114 &4933456055490455956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
   Name: Aguila
-  Sprite: {fileID: 21300000, guid: e1e3243baf98fa28eb494bea6ac9ef67, type: 3}
+  Sprite: {fileID: 21300000, guid: 2f3c258d37e41710095eab05aeb3df46, type: 3}
 --- !u!114 &7711279776256293303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,4 +93,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
   Name: Tigrillo
-  Sprite: {fileID: 21300000, guid: 582af4aa1e27bb765b3aeb5ec927406b, type: 3}
+  Sprite: {fileID: 21300000, guid: 1598cc1cbb32df93c973395e9800dc04, type: 3}
