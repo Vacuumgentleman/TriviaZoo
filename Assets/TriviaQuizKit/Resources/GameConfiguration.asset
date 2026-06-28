@@ -1,19 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8231707837316754802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
-  Name: Jaguar
-  Sprite: {fileID: 21300000, guid: 8a1faae17a3702fcfb9d3f5c02907358, type: 3}
 --- !u!114 &-7750680459389162525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,20 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
   Name: Tigrillo
   Sprite: {fileID: 21300000, guid: 1598cc1cbb32df93c973395e9800dc04, type: 3}
---- !u!114 &-2422636769281858516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
-  Name: Aguila
-  Sprite: {fileID: 21300000, guid: 2f3c258d37e41710095eab05aeb3df46, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,9 +28,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Categories:
   - {fileID: -7750680459389162525}
-  - {fileID: -8231707837316754802}
-  - {fileID: -2422636769281858516}
-  - {fileID: 1207694988285569143}
   AnyCategorySprite: {fileID: 21300000, guid: 468f0f690158867c3ab0e52aff55e300, type: 3}
   NumQuestions: 5
   NumQuestionsNeededForBronzeTrophy: 2
@@ -80,17 +49,3 @@ MonoBehaviour:
     type: 3}
   PreloadedQuestionPacks: {fileID: 11400000, guid: fa309a9b5553851478bd856ec4845b7c,
     type: 2}
---- !u!114 &1207694988285569143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2685cafbe6a64824086492cc388e271d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriviaQuizKit.Category
-  Name: Oso
-  Sprite: {fileID: 21300000, guid: 50cf391049027e6aa9608779aeb097a5, type: 3}
