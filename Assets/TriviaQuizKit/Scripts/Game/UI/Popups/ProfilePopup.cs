@@ -20,6 +20,9 @@ namespace TriviaQuizKit
 		protected Image AvatarImage;
 
 		[SerializeField]
+		protected TMP_InputField NameInput;
+
+		[SerializeField]
 		protected TextMeshProUGUI QuestionTypeText;
 
 		[SerializeField]
@@ -41,6 +44,7 @@ namespace TriviaQuizKit
 
 			selectedAvatar = PlayerPrefs.GetInt("player_avatar");
 			SetAvatar();
+			SetupNameInput();
 			SetQuestionTypeText();
 			CreateCategories();
 			LoadCategoryInfo();
@@ -49,6 +53,23 @@ namespace TriviaQuizKit
 		public void OnCloseButtonPressed()
 		{
 			Close();
+		}
+
+		private void SetupNameInput()
+		{
+			if (NameInput == null)
+			{
+				return;
+			}
+
+			NameInput.text = PlayerPrefs.GetString(PlayerProfile.NameKey, string.Empty);
+			NameInput.onEndEdit.RemoveListener(OnNameChanged);
+			NameInput.onEndEdit.AddListener(OnNameChanged);
+		}
+
+		private void OnNameChanged(string value)
+		{
+			PlayerProfile.SetName(value);
 		}
 
 		public void OnAvatarButtonPressed()
@@ -132,7 +153,6 @@ namespace TriviaQuizKit
 
 					var categoryItem = categoryItemGo.GetComponent<CategoryScrollItem>();
 					categoryItem.Image.sprite = category.Sprite;
-					categoryItem.NameText.text = category.Name;
 
 					categoryItems.Add(categoryItem);
 				}
@@ -141,7 +161,7 @@ namespace TriviaQuizKit
 
 		private void LoadCategoryInfo()
 		{
-			for (var i = 0; i < gameConfig.Categories.Count; i++)
+			for (var i = 0; i < categoryItems.Count; i++)
 			{
 				var str = $"trophy_{selectedQuestionType}_{i}";
 				var pref = PlayerPrefs.GetInt(str);
@@ -157,7 +177,49 @@ namespace TriviaQuizKit
 				{
 					categoryItems[i].HighScoreText.color = categoryItems[i].HighScoreTextColor;
 				}
+
+				LoadGlobalTop(i);
 			}
+		}
+
+		private void LoadGlobalTop(int categoryIndex)
+		{
+			var item = categoryItems[categoryIndex];
+			if (item.GlobalTopText == null)
+			{
+				return;
+			}
+
+			var service = SupabaseRankingService.Instance;
+			if (service == null || !service.IsConfigured)
+			{
+				item.GlobalTopText.text = "";
+				return;
+			}
+
+			var questionType = selectedQuestionType;
+			item.GlobalTopText.text = "Cargando...";
+			service.GetTop(questionType, categoryIndex, 3, entries =>
+			{
+				// Evita pintar respuestas viejas si el jugador ya cambio de tipo.
+				if (this == null || item == null || selectedQuestionType != questionType)
+				{
+					return;
+				}
+
+				if (entries.Count == 0)
+				{
+					item.GlobalTopText.text = "Sin datos";
+					return;
+				}
+
+				var sb = new System.Text.StringBuilder();
+				for (var rank = 0; rank < entries.Count; rank++)
+				{
+					sb.AppendLine($"{rank + 1}. {entries[rank].player_name}  {entries[rank].score}");
+				}
+				item.GlobalTopText.text = sb.ToString().TrimEnd();
+			});
 		}
 	}
 }

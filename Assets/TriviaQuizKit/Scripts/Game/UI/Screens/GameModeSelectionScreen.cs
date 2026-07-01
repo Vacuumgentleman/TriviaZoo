@@ -40,7 +40,10 @@ namespace TriviaQuizKit
 
         public void StartGame()
         {
-            SceneManager.LoadScene("CategorySelection");
+            // Solo hay una categoria activa (Tigrillo, indice 0): se omite la
+            // pantalla de seleccion de categoria y se va directo al juego.
+            PlayerPrefs.SetInt("category", 0);
+            SceneManager.LoadScene("Game");
         }
     }
 }

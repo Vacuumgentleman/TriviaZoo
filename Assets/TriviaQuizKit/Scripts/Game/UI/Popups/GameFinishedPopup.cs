@@ -37,15 +37,52 @@ namespace TriviaQuizKit
 		[SerializeField]
 		protected TextMeshProUGUI HighScoreText;
 
+		private bool isNewHighScore;
+		private int finalScore;
+		private int questionType;
+		private int category;
+		private bool scoreSubmitted;
+
 		public void OnReplayButtonPressed()
 		{
+			SubmitRankingIfNeeded();
 			((GameScreen)ParentScreen).Restart();
 			Close();
 		}
 
 		public void OnQuitButtonPressed()
 		{
+			SubmitRankingIfNeeded();
 			SceneManager.LoadScene("Home");
+		}
+
+		/// <summary>
+		/// Datos para enviar el ranking a Supabase cuando hay nuevo high score.
+		/// </summary>
+		public void SetRankingData(bool newHighScore, int score, int qType, int cat)
+		{
+			isNewHighScore = newHighScore;
+			finalScore = score;
+			questionType = qType;
+			category = cat;
+		}
+
+		private void SubmitRankingIfNeeded()
+		{
+			if (scoreSubmitted || !isNewHighScore)
+			{
+				return;
+			}
+
+			scoreSubmitted = true;
+			var service = SupabaseRankingService.Instance;
+			if (service == null || !service.IsConfigured)
+			{
+				return;
+			}
+
+			var playerName = PlayerProfile.GetOrCreateName();
+			service.SubmitScore(playerName, questionType, category, finalScore);
 		}
 
 		public void SetTrophy(int result, int score, int highScore)

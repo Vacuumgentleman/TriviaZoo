@@ -7,251 +7,137 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 TriviaZoo is a Unity-based trivia quiz game built on the Trivia Quiz Kit framework. It's a 2D game developed with Unity 6000.3.8f1 using the Universal Render Pipeline (URP). The project features multiple game modes, question types, and player progression tracking.
 
 **Key Tech Stack:**
-- Unity 6000.3.8f1
-- C# 11
-- Universal Render Pipeline (URP)
+- Unity 6000.3.8f1 / C# 11 / URP 17.3.0
 - TextMesh Pro for UI text rendering
 - Input System 1.18.0
 
 ## Architecture & Systems
 
-### Core Systems
+### 1. Game Configuration System
 
-#### 1. Game Configuration System
-- **ScriptableObject-based configuration** stored in `Assets/TriviaQuizKit/Resources/GameConfiguration.asset`
-- `GameConfiguration.cs` - Central configuration holding:
-  - Game categories and sprites
-  - Question count, scoring rules, time limits
-  - Prefab references for different question UI types
-  - Trophy thresholds (Bronze/Silver/Gold)
-- Loaded via `GameConfigurationLoader.cs` at runtime using `Resources.Load()`
+- `GameConfiguration.cs` - Central ScriptableObject holding categories, question count, scoring rules, time limits, prefab references, and trophy thresholds
+- Loaded at runtime via `GameConfigurationLoader.cs` using `Resources.Load("GameConfiguration")` — this resolves to `Assets/TriviaQuizKit/Resources/GameConfiguration.asset`
+- `Assets/TriviaZoo/Configuracion/TriviaZoo_GC.asset` is the project-specific configuration asset; `Assets/TriviaZoo/Configuracion/Preguntas/Preguntas_v1.asset` is the active question pack and `Set_P_v1.asset` is its containing `QuestionPackSet`
 
-#### 2. Question System
-**Base hierarchy:**
-- `BaseQuestion` - Abstract base for all question types (ScriptableObjects)
-- `SingleChoiceQuestion` - Single correct answer
-- `MultipleChoiceQuestion` - Multiple correct answers from a set
-- `TrueFalseQuestion` - Binary true/false questions
+### 2. Question System
 
-All question types support:
-- Categories (can belong to multiple)
-- Optional images
-- Metadata field for additional info
+**Type hierarchy (all ScriptableObjects):**
+- `BaseQuestion` → `SingleChoiceQuestion`, `MultipleChoiceQuestion`, `TrueFalseQuestion`
+- All types support: multiple category membership, optional image, metadata field
 
-**Question Management:**
-- Questions bundled into `QuestionPack.cs` (ScriptableObjects in Resources/)
-- `QuestionPackLoader.cs` loads either single or all question packs
-- Questions are filtered by:
-  - Selected question type (Single/Multiple/TrueFalse/Any)
-  - Selected category (or "Any" for all categories)
+**Loading pipeline:**
+- `QuestionPack` bundles questions → referenced via `QuestionPackSet.PreloadedQuestionPacks`
+- `QuestionPackLoader` filters by selected `QuestionType` enum and category index at runtime
 
-#### 3. Game Flow (Scene Architecture)
+### 3. Scene Flow
 
-Four main scenes in `Assets/TriviaZoo/Scenes/`:
-1. **Home.unity** - Main menu with player profile/avatar selection
-   - `HomeScreen.cs` - Manages avatar display and settings popups
-2. **ModeSelection.unity** - Game mode/question type selection
-   - `GameModeSelectionScreen.cs` - Selects question type (Single/Multiple/TrueFalse/Any)
-3. **CategorySelection.unity** - Category selection via toggle buttons
-   - `CategorySelectionScreen.cs` - Builds category toggles from GameConfiguration
-4. **Game.unity** - Main gameplay scene
-   - `GameScreen.cs` - Core game loop controller
+Four scenes in `Assets/TriviaZoo/Scenes/`, always loaded in this order:
 
-**Data Flow via PlayerPrefs:**
-- `player_avatar` - Selected avatar index
-- `question_type` - Selected question type (enum)
-- `category` - Selected category index (-1 = Any)
-- `time_mode` - Limited or Unlimited time (enum)
-- Trophy and score persistence: `trophy_{questionType}_{category}`, `score_{questionType}_{category}`
+| Scene | Controller | Purpose |
+|---|---|---|
+| Home.unity | `HomeScreen.cs` | Avatar/profile selection |
+| ModeSelection.unity | `GameModeSelectionScreen.cs` | Question type (Single/Multiple/TrueFalse/Any) |
+| CategorySelection.unity | `CategorySelectionScreen.cs` | Category toggle selection |
+| Game.unity | `GameScreen.cs` | Core game loop |
 
-#### 4. Game Screen (Core Logic)
+**Inter-scene state is passed entirely via PlayerPrefs** (see keys below). Scenes configure themselves by reading these keys on Start.
 
-`GameScreen.cs` orchestrates gameplay:
-- **Question Selection:** Loads available questions, filters by type/category, randomizes order
-- **Question UI Management:** Dynamically instantiates appropriate question UI variant:
-  - 6 question UI prefabs (3 types × with/without image)
-  - Selected based on question type and presence of image
-- **Scoring:** Tracks correct/wrong answers, calculates score per question
-- **Time Management:**
-  - Limited mode: Countdown timer with visual fill indicator, auto-fails on timeout
-  - Unlimited mode: No timer UI shown
-- **Answer Flow:**
-  - Player submits answer → `OnPlayerAnswered()` validates
-  - Shows result animation (2 seconds)
-  - Advances to next question or finishes game
-- **Game End:** Trophy assignment (Bronze/Silver/Gold) based on correct answer count
+### 4. Game Screen (Core Logic)
 
-#### 5. UI System
+`GameScreen.cs` manages the full gameplay loop:
 
-**Base Classes:**
-- `BaseScreen.cs` - Abstract base for all screens
-  - Popup management (stack-based with semi-transparent panels)
-  - Fade-in/fade-out animations for popups
-  - Resources.LoadAsync for async popup loading
+- **Question selection:** Loads and filters by type/category, randomizes. When all questions are exhausted, the used list is recycled (shuffled and returned to available), enabling infinite play.
+- **Question UI:** Dynamically instantiates one of 6 prefabs (3 types × with/without image). The `QuestionOrder` field (Randomized/Test) and `QuestionPackLoad` field (All/Single) are configurable in the Inspector.
+- **Result feedback:** `QuestionResultUi.cs` — coroutine-based fade-in/out overlay showing correct/wrong text after each answer (2-second display).
+- **Timer:** Limited mode uses a countdown + `Image.fillAmount` indicator. Timeout auto-submits as wrong.
+- **Game end:** Trophy (Bronze/Silver/Gold) assigned by comparing `numCorrectAnswers` against `GameConfiguration` thresholds. High score and trophy persisted per `{questionType}_{category}` key.
 
-- `Popup.cs` - Abstract base for popups (Inspector-driven animations)
-  - OnOpen/OnClose UnityEvents
-  - Animator-driven close animation with destroy delay
+### 5. UI System
 
-- `QuestionUi.cs` - Abstract base for question UI variants
-  - Implementations: `SingleChoiceQuestionUi`, `MultipleChoiceQuestionUi`, `TrueFalseQuestionUi`
-  - Each variant manages answer button layout and result display
+**Base classes:**
+- `BaseScreen.cs` — popup stack management, semi-transparent overlay panels, `Resources.LoadAsync` for async popup loading, coroutine-chained fade animations
+- `Popup.cs` — Animator-driven open/close with `OnOpen`/`OnClose` UnityEvents; destroyed after close animation delay
+- `QuestionUi.cs` — abstract base for answer button layout and result display; extended by `SingleChoiceQuestionUi`, `MultipleChoiceQuestionUi`, `TrueFalseQuestionUi`
 
-**UI Prefab Structure:**
-- Question UI prefabs loaded dynamically at runtime from Resources/QuestionUI/
-- Popup prefabs loaded from Resources/Popups/ (AlertPopup, GameFinishedPopup, etc.)
-- All UI uses Canvas and RectTransform for responsive layout
+**Prefab load paths at runtime:**
+- Question UIs: `Resources/QuestionUI/`
+- Popups: `Resources/Popups/` (Alert, GameFinished, Profile, QuitGame, Settings)
 
-#### 6. Audio System
+### 6. Audio System
 
-`SoundManager.cs` - Singleton pattern:
-- Maps sound names to AudioClips via dictionary
-- Uses `ObjectPool.cs` for SoundFx instances (pooled AudioSources)
-- Respects PlayerPrefs sound/music enabled flags
-- Called by GameScreen for feedback: "Correct", "Incorrect" sounds
-- `BackgroundMusic.cs` - Separate component for background track
+`SoundManager.cs` — singleton, maps sound names → AudioClips, uses `ObjectPool<SoundFx>` for pooled AudioSources. Respects `sound_enabled` / `music_enabled` PlayerPrefs. `BackgroundMusic.cs` handles the background track separately. `PlaySound.cs` is a UnityEvent-friendly wrapper component.
 
-**Object Pooling:**
-`ObjectPool.cs` - Generic pooling system:
-- Configurable initial pool size
-- Lazy creation if pool exhausted
-- Used for: SoundFx prefabs
+### 7. Utility Scripts
 
-#### 7. Utility Systems
+- `SceneTransition.cs` — `SceneManager.LoadScene()` wrapper for buttons
+- `Initialization.cs` — sets PlayerPrefs defaults on Awake (first-run setup)
+- `ListShuffle.cs` — question randomization
+- `ToggleButtonGroup.cs` / `ToggleButton.cs` — mutually exclusive toggle controls
+- `FlatButton.cs` — button with `OnPressedEvent` UnityEvent
+- `SpriteSwapper.cs` — toggles a UI `Image` between two predefined sprites
 
-- **SceneTransition.cs** - Scene loading via `SceneManager.LoadScene()`
-- **Initialization.cs** - Awake-time setup for PlayerPrefs defaults
-- **ListShuffle.cs** - Question randomization utility
-- **ToggleButtonGroup.cs/ToggleButton.cs** - Category/mode selection UI controls
-- **FlatButton.cs** - Button wrapper with OnPressedEvent UnityEvent
+### 8. Editor Tools
 
-### Editor Tools
+Access via **Tools > Trivia Quiz Kit** menu:
+- **Editor** — `GameConfigurationTab` (categories, scoring, prefab refs), `QuestionsTab` (CRUD for questions)
+- **Delete PlayerPrefs** — clears all PlayerPrefs; useful when testing fresh-start flows
+- **Delete EditorPrefs** — clears editor preferences
+- `GameScreenInspector.cs` — custom Inspector for GameScreen
 
-`Tools/Trivia Quiz Kit/Editor` menu window provides:
-- **GameConfigurationTab** - Configure game settings (categories, scoring, UI prefabs)
-- **QuestionsTab** - CRUD operations for questions (category assignment, answers)
-- **AboutTab** - Kit information
-- Inspector custom editor: `GameScreenInspector.cs`
+## PlayerPrefs Keys
 
-## File Organization
-
-```
-Assets/
-├── TriviaQuizKit/              # Core framework (licensed Asset Store code)
-│   ├── Scripts/
-│   │   ├── Core/               # Base classes, managers, utilities
-│   │   ├── Game/
-│   │   │   ├── Logic/          # Question types, game configuration, loaders
-│   │   │   └── UI/
-│   │   │       ├── Screens/    # Scene controllers
-│   │   │       ├── Widgets/    # Question UI, category toggles
-│   │   │       └── Popups/     # Popup implementations
-│   │   └── Editor/             # Editor window and tools
-│   ├── Resources/              # Runtime loadable assets
-│   │   ├── Popups/
-│   │   ├── QuestionUI/
-│   │   ├── GameConfiguration.asset
-│   │   └── QuestionPackSet.asset
-│   ├── Prefabs/                # Reusable UI components
-│   ├── Sounds/                 # Audio clips
-│   └── Sprites/                # UI sprites
-└── TriviaZoo/                  # Project-specific content
-    ├── Scenes/                 # Game scenes (Home, ModeSelection, CategorySelection, Game)
-    ├── Configuracion/
-    │   ├── Preguntas/          # QuestionPack and GameConfiguration assets
-    │   └── TriviaZoo_GC.asset  # Main game configuration
-    ├── Sprites/                # Game-specific sprites
-    └── Music/                  # Background music
-```
+| Key | Type | Description |
+|---|---|---|
+| `sound_enabled` | 0/1 | Sound effects toggle |
+| `music_enabled` | 0/1 | Background music toggle |
+| `player_avatar` | int | Avatar index |
+| `question_type` | int | `QuestionType` enum value |
+| `category` | int | Category index; -1 = Any |
+| `time_mode` | int | `TimeMode` enum value |
+| `trophy_{questionType}_{category}` | int | 0=none, 1=bronze, 2=silver, 3=gold |
+| `score_{questionType}_{category}` | int | High score per type+category combination |
 
 ## Development Workflow
 
-### Building & Testing
+**Opening the project:** Unity 6000.3.8f1. Solution file is `TriviaZoo.slnx`. `.vscode/settings.json` is pre-configured to treat `.asset`, `.prefab`, `.unity`, and `.meta` files as YAML.
 
-**Unity Editor Build:**
-- Open project in Unity 6000.3.8f1
-- Build via File > Build Settings (configure scenes in order: Home → ModeSelection → CategorySelection → Game)
-- Project uses Universal Render Pipeline, ensure URP asset is assigned in Graphics settings
+**Build scene order:** Home → ModeSelection → CategorySelection → Game (File > Build Settings).
 
-**Assembly Files:**
-- `Assembly-CSharp.csproj` - Main game code
-- `Assembly-CSharp-Editor.csproj` - Editor tools
-- Can be opened in Visual Studio Code/Visual Studio (configured in .vscode/settings.json)
+**Third-party tools:** `Assets/ThirdParty/PlayModeComponentSaver/` — saves and restores component values modified during Play Mode back to the scene, preventing work loss.
 
-### Key Workflows
-
-**Adding a New Question:**
-1. Create ScriptableObject instance of desired question type
+### Adding a New Question
+1. Create a ScriptableObject of the desired question type
 2. Fill in Question, Categories, Answers (and optional Image)
-3. Add to QuestionPack asset
-4. Pack referenced in GameConfiguration.PreloadedQuestionPacks
+3. Add to `Preguntas_v1.asset` (the active QuestionPack)
+4. Verify `Set_P_v1.asset` references the pack (or use the QuestionsTab editor)
 
-**Modifying Game Configuration:**
-1. Edit TriviaZoo_GC.asset directly, or
-2. Use Tools > Trivia Quiz Kit > Editor window (GameConfigurationTab)
-3. Configure categories, scoring rules, time limits, trophy thresholds
+### Modifying Game Configuration
+Edit `Assets/TriviaZoo/Configuracion/TriviaZoo_GC.asset` directly, or use **Tools > Trivia Quiz Kit > Editor > GameConfigurationTab**.
 
-**Creating Custom Screens/Popups:**
-1. Create new MonoBehaviour inheriting from `BaseScreen` or `Popup`
-2. For screens: Implement scene and attach to main Canvas
-3. For popups: Create prefab in Resources/Popups/, prefab must have Popup component with Animator
+### Creating Screens / Popups
+- **Screen:** New MonoBehaviour extending `BaseScreen`; attach to scene Canvas
+- **Popup:** New MonoBehaviour extending `Popup`; create prefab with Animator in `Resources/Popups/`; call `BaseScreen.OpenPopup("PrefabName")`
 
-**Modifying Question UI:**
-1. Edit prefabs in Assets/TriviaQuizKit/Resources/QuestionUI/
-2. Ensure all 6 variants (3 types × with/without image) are kept in sync
-3. Update GameConfiguration references if adding new UI prefabs
-
-### PlayerPrefs Keys (Gameplay State)
-
-Persistent player data stored via PlayerPrefs:
-- `sound_enabled` (0/1) - Sound effects toggle
-- `music_enabled` (0/1) - Background music toggle
-- `player_avatar` (int) - Avatar index selection
-- `question_type` (int) - QuestionType enum value
-- `category` (int) - Category index (-1 = Any)
-- `time_mode` (int) - TimeMode enum value
-- `trophy_{questionType}_{category}` (int) - Trophy level (0=none, 1=bronze, 2=silver, 3=gold)
-- `score_{questionType}_{category}` (int) - High score for combination
-
-## Important Design Patterns
-
-### Dynamic UI Instantiation
-GameScreen dynamically instantiates UI prefabs at runtime rather than pre-populating scenes. This allows flexible question type handling without cluttering scenes.
-
-### PlayerPrefs as Session State
-Game state between scenes is passed via PlayerPrefs. Scenes reference these keys to configure themselves (e.g., CategorySelectionScreen reads `category` to set initial toggle).
-
-### Question Randomization with Renewal
-When available questions exhaust, the used list is recycled (shuffle). This allows infinite play without question repetition until all questions seen.
-
-### Async Resource Loading
-Popups and scenes use Resources.LoadAsync to avoid frame hiccups. BaseScreen chains coroutines for popup fade animations.
-
-### ScriptableObject-Driven Configuration
-All game content (questions, categories, settings) is in ScriptableObjects, allowing designers to configure without code changes (via Inspector or Editor window).
-
-## Dependencies
-
-**Core Unity Packages:**
-- com.unity.inputsystem (1.18.0) - Input handling
-- com.unity.render-pipelines.universal (17.3.0) - URP graphics
-- com.unity.ugui (2.0.0) - Canvas/UI system
-- com.unity.textmeshpro - Text rendering
-- com.unity.timeline (1.8.10) - Animation support
-
-**Optional/Development:**
-- com.unity.ide.rider, com.unity.ide.visualstudio - IDE integration
-- com.unity.test-framework (1.6.0) - Unit testing (if needed)
+### Modifying Question UI
+Edit prefabs in `Assets/TriviaQuizKit/Resources/QuestionUI/`. All 6 variants (3 types × with/without image) must stay in sync. If adding new prefab types, update the `GameObject` references in `GameConfiguration`.
 
 ## Debugging Tips
 
-**Common Issues:**
-- Questions not appearing: Check QuestionPackSet is referenced in GameConfiguration, and question categories match selected filters
-- UI buttons not responding: Verify Canvas is present and PopupPanel doesn't block raycasts (check CanvasGroup.blocksRaycasts)
-- Sound not playing: Check PlayerPrefs `sound_enabled` is 1, and SoundManager Instance is found
-- Incorrect trophy awarded: Verify NumQuestionsNeededFor{Bronze,Silver,Gold} thresholds in GameConfiguration
+- **Questions not appearing:** Confirm `QuestionPackSet` is assigned in `GameConfiguration.PreloadedQuestionPacks`; verify question categories match the selected filter
+- **UI buttons not responding:** Check `CanvasGroup.blocksRaycasts` on any popup overlay panel
+- **Sound not playing:** Confirm `sound_enabled = 1` in PlayerPrefs; verify `SoundManager.Instance` is not null
+- **Wrong trophy awarded:** Check `NumQuestionsNeededFor{Bronze,Silver,Gold}` thresholds in `GameConfiguration`
+- **Reset game state during testing:** Use **Tools > Trivia Quiz Kit > Delete PlayerPrefs**
 
-**Useful Debug Points:**
-- GameScreen.OnPlayerAnswered() - Answer validation logic
-- GameScreen.SelectRandomQuestion() - Question selection/filtering
-- SoundManager.PlaySound() - Audio system entry point
+**Key debug entry points:**
+- `GameScreen.OnPlayerAnswered()` — answer validation
+- `GameScreen.SelectRandomQuestion()` — question selection/filtering
+- `SoundManager.PlaySound()` — audio system
+
+## Key Packages
+
+- `com.unity.render-pipelines.universal` (17.3.0) — URP graphics
+- `com.unity.ugui` (2.0.0) — Canvas/UI
+- `com.unity.textmeshpro` — text rendering
+- `com.unity.inputsystem` (1.18.0) — input handling
+- `com.unity.timeline` (1.8.10) — animation support

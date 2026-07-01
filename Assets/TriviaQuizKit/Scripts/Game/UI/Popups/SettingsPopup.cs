@@ -35,7 +35,7 @@ namespace TriviaQuizKit
 		{
 			ParentScreen.OpenPopup<AlertPopup>("Popups/AlertPopup", popup =>
 			{
-				popup.SetText("Aditional Experiences in TriviaZoo.com");
+				popup.SetText("Pruebas mas experiencias en https://tigrillo-web-zeta.vercel.app/");
 			});
 		}
 
@@ -43,7 +43,7 @@ namespace TriviaQuizKit
 		{
 			ParentScreen.OpenPopup<AlertPopup>("Popups/AlertPopup", popup =>
 			{
-				popup.SetText("If you need any help, please contact us.");
+				popup.SetText("Escribe al correo guardianesdeltigrillo@gmail.com para contactarnos");
 			});
 		}
 

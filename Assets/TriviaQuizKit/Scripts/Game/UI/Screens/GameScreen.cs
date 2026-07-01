@@ -429,7 +429,8 @@ namespace TriviaQuizKit
 
 			str = $"score_{questionType}_{category}";
 			var highScore = PlayerPrefs.GetInt(str);
-			if (currentScore > highScore)
+			var isNewHighScore = currentScore > highScore;
+			if (isNewHighScore)
 			{
 				PlayerPrefs.SetInt(str, currentScore);
 				highScore = currentScore;
@@ -438,6 +439,7 @@ namespace TriviaQuizKit
 			OpenPopup<GameFinishedPopup>("Popups/GameFinishedPopup", popup =>
 			{
 				popup.SetTrophy(result, currentScore, highScore);
+				popup.SetRankingData(isNewHighScore, currentScore, questionType, category);
 			});
 		}
 

@@ -21,5 +21,8 @@ namespace TriviaQuizKit
 		public TextMeshProUGUI HighScoreText;
 		public Color HighScoreTextColor;
 		public Color NoHighScoreTextColor;
+
+		[Tooltip("Top global traido de Supabase para esta categoria.")]
+		public TextMeshProUGUI GlobalTopText;
 	}
 }
